@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <h1>JS解释器的严格模式</h1>
+  <script>
+    /*'use strict';  //让js解释器进入严格模式
+    var age1 = 10;
+    age2 = 20;
+    console.log(age1+'-'+age2);*/
+    function f1(){
+      'use strict';
+      //age2 = 20;
+      //console.log(age2);
+      //const MYPI = 3.14;
+      ///MYPI = 3;
+      //console.log(MYPI);
+      var u = 'http://www.baidu.com/s?k=中文a b';
+      document.write( encodeURI(u) );
+      document.write('<br>');
+      document.write(encodeURIComponent(u));
+    }
+    f1();
+  </script>
+</body>
+</html>

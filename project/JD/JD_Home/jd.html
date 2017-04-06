@@ -1,0 +1,1412 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>京东网上商城</title>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" /> 
+        <link href="common.css" type="text/css" rel="Stylesheet" />
+        <link href="content_05.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="jd_detail.js"></script>
+    </head>
+    <body onload="initialData();">
+        <!--固定的浮动栏-->
+        <div id="side_panel">
+            <a class="research" href="3"><b></b>调查问卷</a>
+            <a class="gotop" href="#"><b></b>返回顶部</a>
+        </div>
+
+         <!--页面顶部! -->
+        <div id="top">
+            <div id="top_box">
+                <img src="images/star.jpg" />
+                <a href="#">收藏京东</a>
+		        <div class="rt">   
+		            <ul>
+			            <li>您好，欢迎来到京东！<a href="#" >[登录]</a> <a href="#" >[免费注册]</a></li> 
+			            <li><b></b><a href="#" >我的订单</a></li> 
+			            <li class="vip"><b></b><a href="#" >会员俱乐部</a></li> 
+                        <li class="dakehu"><b></b><a href="#" >企业频道</a></li> 
+			            <li class="app_jd" onmouseover="showElementById('app_jd_items',true);" onmouseout="showElementById('app_jd_items',false);">
+                            <b></b>
+                            <label class="rt">
+                                <a href="#" >手机京东</a>
+                            </label>
+                            <div id="app_jd_items" onmouseover="showTopTag(this,true);" onmouseout="showTopTag(this,false);">
+                                <div class="app">
+                                    <h3>京东客户端</h3>
+                                    <a href="#" class="app"></a>
+                                    <a href="#" class="android"></a>
+                                </div>
+                                <div class="bank">
+                                    <h3>网银钱包客户端</h3>
+                                    <a href="#" class="app"></a>
+                                    <a href="#" class="android"></a>
+                                </div>
+                            </div>
+                        </li> 
+			            <li class="service"  onmouseover="showElementById('service_items',true);" onmouseout="showElementById('service_items',false);">
+                            <b></b>
+                            <label class="rt">
+                                <a> 客户服务</a>
+                            </label>
+                            <ul id="service_items"  onmouseover="showTopTag(this,true);" onmouseout="showTopTag(this,false);">
+                                <li><a href="#">帮助中心</a></li>
+                                <li><a href="#">售后服务</a></li>
+                                <li><a href="#">在线客服</a></li>
+                                <li><a href="#">投诉中心</a></li>
+                                <li><a href="#">客服邮箱</a></li>
+                            </ul>
+                        </li> 
+			            <li class="site_nav" onmouseover="showElementById('site_nav_items',true);" onmouseout="showElementById('site_nav_items',false);">
+                            <b></b>
+                            <label class="rt">
+                                <a >网站导航</a>
+                            </label>
+                            <div id="site_nav_items"  onmouseover="showTopTag(this,true);" onmouseout="showTopTag(this,false);">
+                                <h3>特色栏目</h3>
+                                <ul>
+                                    <li><a href="#">京东通信</a></li>
+                                    <li><a href="#">校园之星</a></li>
+                                    <li><a href="#">视频购物</a></li>
+                                    <li><a href="#">京东社区</a></li>
+                                    <li><a href="#">在线读书</a></li>
+                                    <li><a href="#">装机大师</a></li>
+                                    <li><a href="#">京东 E 卡</a></li>
+                                    <li><a href="#">家装城</a></li>
+                                    <li><a href="#">搭配购</a></li>
+                                    <li><a href="#">我喜欢</a></li>
+                                    <li><a href="#">游戏社区</a></li>
+                                </ul>
+                                <div></div>
+                                <h3>企业服务</h3>
+                                <ul>
+                                    <li><a href="#">企业采购</a></li>
+                                    <li><a href="#">办公直通车</a></li>
+                                </ul>
+                                <div></div>
+                                <h3>旗下网站</h3>
+                                <ul>
+                                    <li><a href="#">English Site</a></li>
+                                </ul>
+                            </div>
+                        </li> 
+			        </ul> 
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+
+        <!--LOGO和搜索框! -->
+        <div id="top_main">
+            <a href="#" class="lf"><img src="images/logo-201305.png" alt="LOGO" /></a>
+            <div id="search_box" class="lf">
+                <div id="search_helper">
+                    <p>卫<b>33衣</b><span>约1120个商品</span></p>
+                    <p>卫<b>衣</b><span>约1120个商品</span></p>
+                    <ul>
+                        <li>在<b>男装 > 卫衣</b>分类中搜索<span>约11731个商品</span></li>
+                        <li>在<b>女装 > 卫衣</b>分类中搜索<span>约10253个商品</span></li>
+                    </ul>
+                    <p>卫<b>新</b><span>约1120个商品</span></p>
+                    <p>卫<b>生纸</b><span>约5100个商品</span></p>
+                    <p>卫<b>浴</b><span>约12758商品</span></p>
+                    <p>卫<b>裤</b><span>约1120个商品</span></p>
+                    <p>卫<b>衣 套装</b><span>约1486个商品</span></p>
+                    <p>卫<b>衣 男</b><span>约210个商品</span></p>
+                    <p>卫<b>生纸 套装</b><span>约631个商品</span></p>
+                </div>
+                <div class="search">
+                    <input id="txtSearch" type="text" class="text" onkeyup="showElementById('search_helper',true);" 
+                    onblur="showElementById('search_helper',false);"/>                    
+                    <input class="button" name="" type="button" value="搜索" />
+                </div>
+                <div class="hot_words">
+                    <span>热门搜索：</span>
+                    <a href="#">家纺11月大促</a>
+                    <a href="#">彩虹电热毯</a>
+                    <a href="#">博洋家纺</a>
+                    <a href="#">霞珍</a>
+                    <a href="#">床垫床褥</a>
+                    <a href="#">九洲鹿被子</a>
+                    <a href="#">南极人家纺</a>
+                </div>
+            </div>
+            <div id="my_jd" class="lf">
+                <div class="my_jd_mt" onmouseover="showElementById('my_jd_items',true);" onmouseout="showElementById('my_jd_items',false);">
+                    我的京东
+                    <b></b>
+                </div>
+                <div id="my_jd_items">
+                    <p>您好，请<a href="#">登录</a></p>
+                    <ul  class="lf">
+                        <li><a href="#">待处理订单</a></li>
+                        <li><a href="#">咨询回复</a></li>
+                        <li><a href="#">降价商品</a></li>
+                        <li><a href="#">返修退换货</a></li>
+                        <li><a href="#">优惠券</a></li>
+                    </ul>
+                    <ul  class="lf">
+                        <li><a href="#">我的关注 &gt;</a></li>
+                        <li><a href="#">我的京豆 &gt;</a></li>
+                        <li><a href="#">我的理财 &gt;</a></li>
+                        <li><a href="#">我的白条 &gt;</a></li>
+                    </ul>
+                </div>     
+            </div>
+            <div id="settle_up" class="lf">
+                <div class="settle_up_mt" onmouseover="showElementById('settle_up_items',true);" onmouseout="showElementById('settle_up_items',false);">
+                    去购物车结算
+                    <b></b>
+                </div>
+                <div id="settle_up_items">
+                    <div id="no_goods">
+                        <b></b>
+                        购物车中还没有商品，赶紧去选购吧
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div class="clear"></div>
+
+        <!--主导航 -->
+        <div id="nav">
+            <div id="category">
+                <div id="cate_mt">
+                    <a href="#">全部商品分类</a>
+                 </div>                
+            </div>
+            <div id="nav_items">
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#">服装城</a></li>
+                    <li><a href="#">食品</a></li>
+                    <li><a href="#">团购</a></li>
+                    <li><a href="#">夺宝岛</a></li>
+                    <li><a href="#">闪购</a></li>
+                    <li><a href="#">金融</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+    <!-- 主体内容 -->
+        <div id="content">
+          <div id="content_1">
+            <div id="leftMenu">
+                    <div class="cate_item" onmouseover="showNaviSubItems(this);">
+                        <h3>
+                            <a href="#">图书</a><span>、</span>
+                            <a href="#">音像</a><span>、</span>
+                            <a href="#">数字商品</a>
+                        </h3>
+                        <div class="sub_cate_box" >
+                            <div class="sub_cate_items">
+                                <div>
+                                    <a href="#">电子书</a>
+                                    <p>
+                                        <a href="#">免费</a>
+                                        <a href="#">小说</a>
+                                        <a href="#">励志与成功</a>
+                                        <a href="#">婚恋/两性</a>
+                                        <a href="#">文学</a>
+                                        <a href="#">经营</a>
+                                        <a href="#">畅读VIP</a>
+                                    </p>
+                                </div>
+                                <div>
+                                    <a href="#">数字音乐</a>
+                                    <p>
+                                        <a href="#">通俗流行</a>
+                                        <a href="#">古典音乐</a>
+                                        <a href="#">摇滚说唱</a>
+                                        <a href="#">爵士蓝调</a>
+                                        <a href="#">乡村民谣</a>
+                                        <a href="#">有声读物</a>
+                                    </p>
+                                </div>
+                                <div>
+                                    <a href="#">音像</a>
+                                    <p>
+                                        <a href="#">音乐</a>
+                                        <a href="#">影视</a>
+                                        <a href="#">教育音像</a>
+                                        <a href="#">游戏</a>
+                                    </p>
+                                </div>
+                                <div>
+                                    <a href="#">文艺</a>
+                                    <p>
+                                        <a href="#">小说</a>
+                                        <a href="#">文学</a>
+                                        <a href="#">青春文学</a>
+                                        <a href="#">传记</a>
+                                        <a href="#">艺术</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="sub_cate_banner">
+                                <div><img src="images/cate_banner_01.jpg" /></div>
+                                <div><img src="images/cate_banner_02.jpg" /></div>
+                                <div>
+                                    <p>推荐品牌出版商/书店</p>
+                                    <ul>
+                                        <li><a href="#">中华书局</a></li>
+                                        <li><a href="#">人民邮电出版社</a></li>
+                                        <li><a href="#">上海世纪出版股份有限公司</a></li>
+                                        <li><a href="#">电子工业出版社</a></li>
+                                        <li><a href="#">三联书店</a></li>
+                                        <li><a href="#">浙江少年儿童出版社</a></li>
+                                        <li><a href="#">人民文学出版社</a></li>
+                                        <li><a href="#">外语教学与研究出版社</a></li>
+                                        <li><a href="#">中信出版社</a></li>
+                                        <li><a href="#">化学工业出版社</a></li>
+                                        <li><a href="#">北京大学出版社</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="close">×</div>
+                        </div>
+                    </div>
+                    <div class="cate_item"  onmouseover="showNaviSubItems(this);">
+                        <h3>
+                            <a href="#">家用电器</a>
+                        </h3>
+                        <div class="sub_cate_box">
+                            <div class="sub_cate_items">
+                                <div>
+                                        <a href="#">大家电</a>
+                                        <p>
+                                            <a href="#">家电爆品</a>
+                                            <a href="#">平板电视</a>
+                                            <a href="#">空调</a>
+                                            <a href="#">冰箱</a>
+                                            <a href="#">洗衣机</a>
+                                            <a href="#">家庭影院</a>
+                                            <a href="#">DVD</a>
+                                            <a href="#">迷你音响</a>
+                                            <a href="#">烟机/灶具</a>
+                                            <a href="#">热水器</a>
+                                            <a href="#">消毒柜/洗碗机</a>
+                                            <a href="#">酒柜/冷柜</a>
+                                            <a href="#">家电配件</a>
+                                        </p>                                  
+                              </div>
+                                <div>
+                                    <a href="#">生活电器</a>
+                                    <p>
+                                        <a href="#">取暖电器</a>
+                                        <a href="#">净化器加湿器</a>
+                                        <a href="#">扫地机器人</a>
+                                        <a href="#">吸尘器</a>
+                                    </p>
+                                </div>
+                                <div>
+                                    <a href="#">厨房电器</a>
+                                    <p>
+                                        <a href="#">电压力锅</a>
+                                        <a href="#">电饭煲</a>
+                                        <a href="#">豆浆机</a>
+                                    </p>
+                                </div>
+                                <div>
+                                    <a href="#">五金家电</a>
+                                    <p>
+                                        <a href="#">电动工具</a>
+                                        <a href="#">手动工具</a>
+                                        <a href="#">仪器仪表</a>
+                                        <a href="#">浴霸/排气扇</a>
+                                        <a href="#">灯具</a>
+                                        <a href="#">洁身器</a>
+                                        <a href="#">LED灯</a>
+                                        <a href="#">水槽</a>
+                                        <a href="#">淋浴花洒</a>
+                                        <a href="#">厨卫五金</a>
+                                        <a href="#">家具五金</a>
+                                        <a href="#">门铃</a>
+                                        <a href="#">电气开关</a>
+                                        <a href="#">插座</a>
+                                        <a href="#">电工电料</a>
+                                        <a href="#">监控安防</a>
+                                        <a href="#">电线/线缆</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="sub_cate_banner">
+                            
+                            </div>
+                        </div>
+                    </div>
+    </div>
+            <div class="cols_2">
+              <div id="banner"><img src="images/index/banner.jpg" width="670" height="240"></div>
+              <div class="ad">
+                <span class="preview"><a href="javascript:;"></a></span>
+                <ul>
+                  <li><a href="javascript:;"><img src="images/index/ad_01.jpg" width="182" height="139"></a></li>
+                  <li><a href="javascript:;"><img src="images/index/ad_02.jpg" width="182" height="139"></a></li>
+                  <li class="li_last"><a href="javascript:;"><img src="images/index/ad_03.jpg" width="182" height="139"></a></li>
+                </ul>
+                <span class="next"><a href="javascript:;"></a></span>
+              </div>
+            </div>
+            <div class="cols_3">
+              <div class="ad"><a href="javascript:;"><img src="images/index/54c998f7N239899c0.jpg" width="310" height="70"></a></div>
+              <div id="news">
+                <div class="title">
+                <span>京东快报</span>
+                  <b><a href="javascript:;">更多快报&nbsp;&gt;</a></b>
+                </div>
+                <div class="context">
+                  <ul>
+                    <li><a href="javascript:;">松鼠好年货2折开抢！</a></li>
+                    <li><a href="javascript:;">名酒春晚 茅台888</a></li>
+                    <li><a href="javascript:;">四国鲜花定制款低至5折</a></li>
+                    <li><a href="javascript:;">家居年货大采购 低至9.9</a></li>
+                  </ul>
+                  <ul class="right">
+                    <li><a href="javascript:;">年味食足最高199减50</a></li>
+                    <li><a href="javascript:;">MOTO X，10:30开售！</a></li>
+                    <li><a href="javascript:;">京东自营 爱鲜回家</a></li>
+                    <li><a href="javascript:;">关于假冒客服诈骗的声明</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div id="virtuals">
+                <ul>
+                  <li id="huafei"><a href="javascript:;"><s></s>话费<i></i></a></li>
+                  <li id="jipiao"><a><s></s>机票<i></i></a></li>
+                  <li id="caipiao"><a><s></s>彩票<i></i></a></li>
+                  <li id="youxi"><a href="javascript:;"><s></s>游戏<i></i></a></li>
+                  <li id="lvxing"><a href="javascript:;"><s></s>旅行</a></li>
+                  <li id="dianyingpiao"><a href="javascript:;"><s></s>电影票</a></li>
+                  <li id="licai"><a href="javascript:;"><s></s>理财</a></li>
+                  <li id="shuidianmei"><a href="javascript:;"><s></s>水电煤</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="clear"></div>
+          <div id="content_2">
+            <div class="title"><img src="images/index/chuchuang_title.png" width="228" height="24"></div>
+            <div class="content">
+              <div id="pinpaijie" class="box">
+              <div id="pinpaijie_text" class="text">
+                  <dl>
+                    <dt>品牌街</dt>
+                    <dd>三星note<br>
+                    <span class="a">赠500京东E卡</span>
+                    </dd>
+                  <ul>
+                    <li><i></i>更多品牌</li>
+                    <li><i></i>进入品牌街</li>
+                  </ul>
+                </dl>
+                <div class="text_bg"></div>
+                </div>
+              <a class="s-img" href="javascript:;"><img src="images/index/pinpaijie.jpg" width="305" height="190"></a>
+              </div>
+              <div id="dijia" class="box">
+              <div id="dijia_text" class="text">
+                  <dl>
+                    <dt>天天低价</dt>
+                    <dd>坚果礼盒<br>
+                    <span class="b">95.8元秒杀</span>
+                    </dd> 
+                </dl>
+                <div class="text_bg"></div>
+                </div>
+              <a class="s-img" href="javascript:;"><img src="images/index/tiantiandijia.jpg" width="305" height="190"></a>
+              </div>
+              <div id="haodongxi" class="box">
+              <div id="haodongxi_text" class="text">
+                  <dl>
+                    <dt>好东西</dt>
+                    <dd>罗技蓝牙键盘<br>
+                    <span class="a">舒适键入249</span>
+                    </dd>
+                  <ul>
+                    <li><i></i>键鼠送红包</li>
+                    <li><i></i>逛更多&gt;</li>
+                  </ul>
+                </dl>
+                <div class="text_bg"></div>
+                </div>
+              <a class="s-img" href="javascript:;"><img src="images/index/haodongxi.jpg" width="305" height="190"></a>
+              </div>
+              <div id="tuangou" class="box">
+              <div id="tuangou_text" class="text">
+                  <dl>
+                    <dt>今日团购</dt>
+                    <dd>100元代金券<br></dd> 
+                    <div id="tuan">
+                      团购价<span>￥89</span>
+                    </div>
+                </dl>
+                <div class="text_bg"></div>
+                </div>
+              <a class="s-img" href="javascript:;"><img src="images/index/tuangou.png" width="305" height="190"></a>
+              </div>
+              <div id="shoufa" class="box">
+              <div id="shoufa_text" class="text">
+                  <dl>
+                    <dt>京东首发</dt>
+                    <dd>MOTO&nbsp;X<br>
+                    <span class="b">强势回归现货抢</span>
+                    </dd> 
+                </dl>
+                <div class="text_bg"></div>
+                </div>
+              <a class="s-img" href="javascript:;"><img src="images/index/jingdongshoufa.jpg" width="305" height="190"></a>
+              </div>
+              <div id="youhuiquan" class="box">
+              <div id="youhuiquan_text" class="text">
+                  <dl>
+                    <dt>优惠券</dt>
+                    <dd>意尔康男鞋<br>
+                    <span class="a">百元神券限量送</span>
+                    </dd>
+                </dl>
+                <div class="text_bg"></div>
+                </div>
+              <a class="s-img" href="javascript:;"><img src="images/index/youhuiquan.jpg" width="305" height="190"></a>
+              </div>
+              <div id="yushou" class="box">
+              <div id="yushou_text" class="text">
+                  <dl>
+                    <dt>京东预售</dt>
+                    <dd>磁带蓝牙音箱<br>
+                    <span class="b">送小米手环</span>
+                    </dd> 
+                </dl>
+                <div class="text_bg"></div>
+                </div>
+              <a class="s-img" href="javascript:;"><img src="images/index/jingdongyushou.jpg" width="305" height="190"></a>
+              </div>
+              <div id="jingxuan" class="box">
+              <div id="jingxuan_text" class="text">
+                  <dl>
+                    <dt>金融精选</dt>
+                    <dd>打白条0元购<br>
+                    <span class="a">iPhone 6分期购</span>
+                    </dd>
+                </dl>
+                <div class="text_bg"></div>
+                </div>
+              <a class="s-img" href="javascript:;"><img src="images/index/haodongxi.jpg" width="305" height="190"></a>
+              </div>
+            </div>
+            <div class="ad">
+              <ul>
+                <li><a href="javascript:;"><img src="images/index/54d08296N1bdfac7c.jpg" width="396" height="70"/></a></li>
+                <li><a href="javascript:;"><img src="images/index/54cb64cfN1fb5c57a.jpg" width="396" height="70"/></a></li>
+                <li class="last"><a href="javascript:;"><img src="images/index/54d176afN39137528.jpg" width="396" height="70"/></a></li>
+              </ul>
+            </div>
+          </div>
+      <div id="content_3">
+        <div class="floor" id="f1">
+          <div class="f_top">
+            <s>1F<b></b></s><div class="title">家电通讯</div>
+            <div class="tab">
+              <ul>
+                <li><a href="javascript:;">特价商品</a></li>
+                <li><a href="javascript:;">大家电</a></li>
+                <Li><a href="javascript:;">小家电</a></Li>
+                <li><a href="javascript:;">手机通讯</a></li>
+                <Li><a href="javascript:;">汽车五金</a></Li>
+              </ul>
+            </div>
+            <div class="link">
+              <ul>
+                <li><a href="javascript:;">大家电配送</a></li>
+                <li><a href="javascript:;">合约计划说明</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="box">
+            <div class="cols_1">
+              <ul>
+                <li><a href="javascript:;">手机</a></li>
+                <li><a href="javascript:;">空调</a></li>
+                <li><a href="javascript:;">手机配件</a></li>
+                <li><a href="javascript:;">平板电视</a></li>
+                <li><a href="javascript:;">话费补贴</a></li>
+                <li><a href="javascript:;">冰箱</a></li>
+                <li><a href="javascript:;">生活电器</a></li>
+                <li><a href="javascript:;">洗衣机</a></li>
+                <li><a href="javascript:;">厨房电器</a></li>
+                <li><a href="javascript:;">热水器</a></li>
+                <li><a href="javascript:;">个护健康</a></li>
+                <li><a href="javascript:;">烟机/灶具</a></li>
+                <li><a href="javascript:;">五金家装</a></li>
+                <li><a href="javascript:;">家庭影院</a></li>
+                <li><a href="javascript:;">冰柜/冰吧</a></li>
+                <li><a href="javascript:;">汽车用品</a></li>
+              </ul>
+              <span><img src="images/index/fl_01.jpg" width="200" height="140" /></span>
+            </div>
+            <div class="cols_2">
+              <dl>
+                <dt><img src="images/index/fl_dl_01.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">48英寸智能电视2499,55英寸智能电视3499</a></dd>
+                <s>买电视送澳门风云2电影票</s>
+              </dl>
+              <div class="ad_01"><a href="javascript:;"><img src="images/index/fl_ad_01.jpg" width="473" height="180"></a></div>
+              <dl>
+                <dt><img src="images/index/fl_dl_02.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">moto新品首发</a></dd>
+                <s>归来！2月5日10:30抢</s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_03.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">小家电--加一元即享买一赠一</a></dd>
+                <s>另有疯狂加价购</s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_04.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">大神 X7 现货开抢！</a></dd>
+                <s>￥<span>1699</span>.00</s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_05.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">大家电-年前收货！全场狂降!</a></dd>
+                <s>大牌7kg洗衣机998元秒杀</s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_06.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">这就是范儿！有范儿才有未来！</a></dd>
+                <s></s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_07.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">回家路上，车品护航</a></dd>
+                <s>年底大放血！</s>
+              </dl>
+            </div>
+            <div class="cols_3">
+              <ul>
+                <li><img src="images/index/rBEQWVFQLqgIAAAAAAAFbgvhBqMAAC0MAP_3cIAAAWG414.gif" width="98" height="35"></li>
+                <li><img src="images/index/537b3138N3205302e.jpg" width="98" height="35"></li>
+                <li><img src="images/index/53829f6eNa98427dc.jpg" width="98" height="35"></li>
+                <li><img src="images/index/rBEhUlHmCN0IAAAAAAASpGQ8IDYAABK2AP_yHEAABK8207.jpg" width="98" height="35"></li>
+                <li><img src="images/index/537b316bN35574fff.jpg" width="98" height="35"></li>
+                <li><img src="images/index/54caf3a2N56357d7c.jpg" width="98" height="35"></li>
+                <li><img src="images/index/537b3173Ne74bf3cf.jpg" width="98" height="35"></li>
+                <li><img src="images/index/537b3152Nf0573a0d.jpg" width="98" height="35"></li>
+                <li><img src="images/index/537b3130N7591211b.jpg" width="98" height="35"></li>
+                <li><img src="images/index/rBEbRlN5zCsIAAAAAAALfFfJRv8AACGGgO__3sAAAuU660.jpg" width="98" height="35"></li>
+              </ul>
+              <div class="ad_02"> <a href="javascript:;"><img src="images/index/fl_ad_02.jpg" width="209" height="181"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="floor" id="f2">
+          <div class="f_top">
+            <s>2F<b></b></s><div class="title">电脑数码</div>
+            <div class="tab">
+              <ul>
+                <li><a href="javascript:;">特价商品</a></li>
+                <li><a href="javascript:;">笔记本</a></li>
+                <Li><a href="javascript:;">数码影音</a></Li>
+                <li><a href="javascript:;">DIY攒机</a></li>
+                <Li><a href="javascript:;">外设办公</a></Li>
+              </ul>
+            </div>
+            <div class="link">
+              <ul>
+                <li><a href="javascript:;">DIY装机大师</a></li>
+                <li><a href="javascript:;">游戏社区</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="box">
+            <div class="cols_1">
+              <ul>
+                <li><a href="javascript:;">手机</a></li>
+                <li><a href="javascript:;">空调</a></li>
+                <li><a href="javascript:;">手机配件</a></li>
+                <li><a href="javascript:;">平板电视</a></li>
+                <li><a href="javascript:;">话费补贴</a></li>
+                <li><a href="javascript:;">冰箱</a></li>
+                <li><a href="javascript:;">生活电器</a></li>
+                <li><a href="javascript:;">洗衣机</a></li>
+                <li><a href="javascript:;">厨房电器</a></li>
+                <li><a href="javascript:;">热水器</a></li>
+                <li><a href="javascript:;">个护健康</a></li>
+                <li><a href="javascript:;">烟机/灶具</a></li>
+                <li><a href="javascript:;">五金家装</a></li>
+                <li><a href="javascript:;">家庭影院</a></li>
+                <li><a href="javascript:;">冰柜/冰吧</a></li>
+                <li><a href="javascript:;">汽车用品</a></li>
+              </ul>
+              <span><img src="images/index/fl_01.jpg" width="200" height="140" /></span>
+            </div>
+            <div class="cols_2">
+              <dl>
+                <dt><img src="images/index/fl_dl_01.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">48英寸智能电视2499,55英寸智能电视3499</a></dd>
+                <s>买电视送澳门风云2电影票</s>
+              </dl>
+              <div class="ad_01"><a href="javascript:;"><img src="images/index/fl_ad_01.jpg" width="473" height="180"></a></div>
+              <dl>
+                <dt><img src="images/index/fl_dl_02.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">moto新品首发</a></dd>
+                <s>归来！2月5日10:30抢</s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_03.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">小家电--加一元即享买一赠一</a></dd>
+                <s>另有疯狂加价购</s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_04.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">大神 X7 现货开抢！</a></dd>
+                <s>￥<span>1699</span>.00</s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_05.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">大家电-年前收货！全场狂降!</a></dd>
+                <s>大牌7kg洗衣机998元秒杀</s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_06.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">这就是范儿！有范儿才有未来！</a></dd>
+                <s></s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_07.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">回家路上，车品护航</a></dd>
+                <s>年底大放血！</s>
+              </dl>
+            </div>
+            <div class="cols_3">
+              <ul>
+                <li><img src="images/index/rBEQWVFQLqgIAAAAAAAFbgvhBqMAAC0MAP_3cIAAAWG414.gif" width="98" height="35"></li>
+                <li><img src="images/index/537b3138N3205302e.jpg" width="98" height="35"></li>
+                <li><img src="images/index/53829f6eNa98427dc.jpg" width="98" height="35"></li>
+                <li><img src="images/index/rBEhUlHmCN0IAAAAAAASpGQ8IDYAABK2AP_yHEAABK8207.jpg" width="98" height="35"></li>
+                <li><img src="images/index/537b316bN35574fff.jpg" width="98" height="35"></li>
+                <li><img src="images/index/54caf3a2N56357d7c.jpg" width="98" height="35"></li>
+                <li><img src="images/index/537b3173Ne74bf3cf.jpg" width="98" height="35"></li>
+                <li><img src="images/index/537b3152Nf0573a0d.jpg" width="98" height="35"></li>
+                <li><img src="images/index/537b3130N7591211b.jpg" width="98" height="35"></li>
+                <li><img src="images/index/rBEbRlN5zCsIAAAAAAALfFfJRv8AACGGgO__3sAAAuU660.jpg" width="98" height="35"></li>
+              </ul>
+              <div class="ad_02"> <a href="javascript:;"><img src="images/index/fl_ad_02.jpg" width="209" height="181"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="floor" id="f3">
+          <div class="f_top">
+            <s>3F<b></b></s><div class="title">服饰鞋包</div>
+            <div class="tab">
+              <ul>
+                <li><a href="javascript:;">特价商品</a></li>
+                <li><a href="javascript:;">品牌男装</a></li>
+                <Li><a href="javascript:;">品牌女装</a></Li>
+                <li><a href="javascript:;">鞋靴箱包</a></li>
+                <Li><a href="javascript:;">运动户外</a></Li>
+              </ul>
+            </div>
+            <div class="link">
+              <ul>
+                <li><a href="javascript:;"><img src="images/index/oversea.gif" width="115" height="22"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="box">
+            <div class="cols_1">
+              <ul>
+                <li><a href="javascript:;">手机</a></li>
+                <li><a href="javascript:;">空调</a></li>
+                <li><a href="javascript:;">手机配件</a></li>
+                <li><a href="javascript:;">平板电视</a></li>
+                <li><a href="javascript:;">话费补贴</a></li>
+                <li><a href="javascript:;">冰箱</a></li>
+                <li><a href="javascript:;">生活电器</a></li>
+                <li><a href="javascript:;">洗衣机</a></li>
+                <li><a href="javascript:;">厨房电器</a></li>
+                <li><a href="javascript:;">热水器</a></li>
+                <li><a href="javascript:;">个护健康</a></li>
+                <li><a href="javascript:;">烟机/灶具</a></li>
+                <li><a href="javascript:;">五金家装</a></li>
+                <li><a href="javascript:;">家庭影院</a></li>
+                <li><a href="javascript:;">冰柜/冰吧</a></li>
+                <li><a href="javascript:;">汽车用品</a></li>
+              </ul>
+              <span><img src="images/index/fl_01.jpg" width="200" height="140" /></span>
+            </div>
+            <div class="cols_2">
+              <dl>
+                <dt><img src="images/index/fl_dl_01.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">48英寸智能电视2499,55英寸智能电视3499</a></dd>
+                <s>买电视送澳门风云2电影票</s>
+              </dl>
+              <div class="ad_01"><a href="javascript:;"><img src="images/index/fl_ad_01.jpg" width="473" height="180"></a></div>
+              <dl>
+                <dt><img src="images/index/fl_dl_02.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">moto新品首发</a></dd>
+                <s>归来！2月5日10:30抢</s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_03.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">小家电--加一元即享买一赠一</a></dd>
+                <s>另有疯狂加价购</s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_04.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">大神 X7 现货开抢！</a></dd>
+                <s>￥<span>1699</span>.00</s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_05.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">大家电-年前收货！全场狂降!</a></dd>
+                <s>大牌7kg洗衣机998元秒杀</s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_06.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">这就是范儿！有范儿才有未来！</a></dd>
+                <s></s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_07.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">回家路上，车品护航</a></dd>
+                <s>年底大放血！</s>
+              </dl>
+            </div>
+            <div class="cols_3">
+              <ul>
+                <li><img src="images/index/rBEQWVFQLqgIAAAAAAAFbgvhBqMAAC0MAP_3cIAAAWG414.gif" width="98" height="35"></li>
+                <li><img src="images/index/537b3138N3205302e.jpg" width="98" height="35"></li>
+                <li><img src="images/index/53829f6eNa98427dc.jpg" width="98" height="35"></li>
+                <li><img src="images/index/rBEhUlHmCN0IAAAAAAASpGQ8IDYAABK2AP_yHEAABK8207.jpg" width="98" height="35"></li>
+                <li><img src="images/index/537b316bN35574fff.jpg" width="98" height="35"></li>
+                <li><img src="images/index/54caf3a2N56357d7c.jpg" width="98" height="35"></li>
+                <li><img src="images/index/537b3173Ne74bf3cf.jpg" width="98" height="35"></li>
+                <li><img src="images/index/537b3152Nf0573a0d.jpg" width="98" height="35"></li>
+                <li><img src="images/index/537b3130N7591211b.jpg" width="98" height="35"></li>
+                <li><img src="images/index/rBEbRlN5zCsIAAAAAAALfFfJRv8AACGGgO__3sAAAuU660.jpg" width="98" height="35"></li>
+              </ul>
+              <div class="ad_02"> <a href="javascript:;"><img src="images/index/fl_ad_02.jpg" width="209" height="181"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="floor" id="f4">
+          <div class="f_top">
+            <s>4F<b></b></s><div class="title">美容珠宝</div>
+            <div class="tab">
+              <ul>
+                <li><a href="javascript:;">特价商品</a></li>
+                <li><a href="javascript:;">美容化妆</a></li>
+                <Li><a href="javascript:;">个人护理</a></Li>
+                <li><a href="javascript:;">黄金珠宝</a></li>
+                <Li><a href="javascript:;">钟表首饰</a></Li>
+              </ul>
+            </div>
+            <div class="link">
+              <ul>
+                <li><a href="javascript:;"><img src="images/index/life.gif" width="115" height="22"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="box">
+            <div class="cols_1">
+              <ul>
+                <li><a href="javascript:;">手机</a></li>
+                <li><a href="javascript:;">空调</a></li>
+                <li><a href="javascript:;">手机配件</a></li>
+                <li><a href="javascript:;">平板电视</a></li>
+                <li><a href="javascript:;">话费补贴</a></li>
+                <li><a href="javascript:;">冰箱</a></li>
+                <li><a href="javascript:;">生活电器</a></li>
+                <li><a href="javascript:;">洗衣机</a></li>
+                <li><a href="javascript:;">厨房电器</a></li>
+                <li><a href="javascript:;">热水器</a></li>
+                <li><a href="javascript:;">个护健康</a></li>
+                <li><a href="javascript:;">烟机/灶具</a></li>
+                <li><a href="javascript:;">五金家装</a></li>
+                <li><a href="javascript:;">家庭影院</a></li>
+                <li><a href="javascript:;">冰柜/冰吧</a></li>
+                <li><a href="javascript:;">汽车用品</a></li>
+              </ul>
+              <span><img src="images/index/fl_01.jpg" width="200" height="140" /></span>
+            </div>
+            <div class="cols_2">
+              <dl>
+                <dt><img src="images/index/fl_dl_01.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">48英寸智能电视2499,55英寸智能电视3499</a></dd>
+                <s>买电视送澳门风云2电影票</s>
+              </dl>
+              <div class="ad_01"><a href="javascript:;"><img src="images/index/fl_ad_01.jpg" width="473" height="180"></a></div>
+              <dl>
+                <dt><img src="images/index/fl_dl_02.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">moto新品首发</a></dd>
+                <s>归来！2月5日10:30抢</s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_03.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">小家电--加一元即享买一赠一</a></dd>
+                <s>另有疯狂加价购</s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_04.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">大神 X7 现货开抢！</a></dd>
+                <s>￥<span>1699</span>.00</s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_05.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">大家电-年前收货！全场狂降!</a></dd>
+                <s>大牌7kg洗衣机998元秒杀</s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_06.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">这就是范儿！有范儿才有未来！</a></dd>
+                <s></s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_07.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">回家路上，车品护航</a></dd>
+                <s>年底大放血！</s>
+              </dl>
+            </div>
+            <div class="cols_3">
+              <ul>
+                <li><img src="images/index/rBEQWVFQLqgIAAAAAAAFbgvhBqMAAC0MAP_3cIAAAWG414.gif" width="98" height="35"></li>
+                <li><img src="images/index/537b3138N3205302e.jpg" width="98" height="35"></li>
+                <li><img src="images/index/53829f6eNa98427dc.jpg" width="98" height="35"></li>
+                <li><img src="images/index/rBEhUlHmCN0IAAAAAAASpGQ8IDYAABK2AP_yHEAABK8207.jpg" width="98" height="35"></li>
+                <li><img src="images/index/537b316bN35574fff.jpg" width="98" height="35"></li>
+                <li><img src="images/index/54caf3a2N56357d7c.jpg" width="98" height="35"></li>
+                <li><img src="images/index/537b3173Ne74bf3cf.jpg" width="98" height="35"></li>
+                <li><img src="images/index/537b3152Nf0573a0d.jpg" width="98" height="35"></li>
+                <li><img src="images/index/537b3130N7591211b.jpg" width="98" height="35"></li>
+                <li><img src="images/index/rBEbRlN5zCsIAAAAAAALfFfJRv8AACGGgO__3sAAAuU660.jpg" width="98" height="35"></li>
+              </ul>
+              <div class="ad_02"> <a href="javascript:;"><img src="images/index/fl_ad_02.jpg" width="209" height="181"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="floor" id="f5">
+          <div class="f_top">
+            <s>5F<b></b></s><div class="title">居家生活</div>
+            <div class="tab">
+              <ul>
+                <li><a href="javascript:;">特价商品</a></li>
+                <li><a href="javascript:;">笔记本</a></li>
+                <Li><a href="javascript:;">数码影音</a></Li>
+                <li><a href="javascript:;">DIY攒机</a></li>
+                <Li><a href="javascript:;">外设办公</a></Li>
+              </ul>
+            </div>
+            <div class="link">
+              <ul>
+                <li><a href="javascript:;">DIY装机大师</a></li>
+                <li><a href="javascript:;">游戏社区</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="box">
+            <div class="cols_1">
+              <ul>
+                <li><a href="javascript:;">手机</a></li>
+                <li><a href="javascript:;">空调</a></li>
+                <li><a href="javascript:;">手机配件</a></li>
+                <li><a href="javascript:;">平板电视</a></li>
+                <li><a href="javascript:;">话费补贴</a></li>
+                <li><a href="javascript:;">冰箱</a></li>
+                <li><a href="javascript:;">生活电器</a></li>
+                <li><a href="javascript:;">洗衣机</a></li>
+                <li><a href="javascript:;">厨房电器</a></li>
+                <li><a href="javascript:;">热水器</a></li>
+                <li><a href="javascript:;">个护健康</a></li>
+                <li><a href="javascript:;">烟机/灶具</a></li>
+                <li><a href="javascript:;">五金家装</a></li>
+                <li><a href="javascript:;">家庭影院</a></li>
+                <li><a href="javascript:;">冰柜/冰吧</a></li>
+                <li><a href="javascript:;">汽车用品</a></li>
+              </ul>
+              <span><img src="images/index/fl_01.jpg" width="200" height="140" /></span>
+            </div>
+            <div class="cols_2">
+              <dl>
+                <dt><img src="images/index/fl_dl_01.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">48英寸智能电视2499,55英寸智能电视3499</a></dd>
+                <s>买电视送澳门风云2电影票</s>
+              </dl>
+              <div class="ad_01"><a href="javascript:;"><img src="images/index/fl_ad_01.jpg" width="473" height="180"></a></div>
+              <dl>
+                <dt><img src="images/index/fl_dl_02.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">moto新品首发</a></dd>
+                <s>归来！2月5日10:30抢</s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_03.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">小家电--加一元即享买一赠一</a></dd>
+                <s>另有疯狂加价购</s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_04.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">大神 X7 现货开抢！</a></dd>
+                <s>￥<span>1699</span>.00</s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_05.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">大家电-年前收货！全场狂降!</a></dd>
+                <s>大牌7kg洗衣机998元秒杀</s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_06.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">这就是范儿！有范儿才有未来！</a></dd>
+                <s></s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_07.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">回家路上，车品护航</a></dd>
+                <s>年底大放血！</s>
+              </dl>
+            </div>
+            <div class="cols_3">
+              <ul>
+                <li><img src="images/index/rBEQWVFQLqgIAAAAAAAFbgvhBqMAAC0MAP_3cIAAAWG414.gif" width="98" height="35"></li>
+                <li><img src="images/index/537b3138N3205302e.jpg" width="98" height="35"></li>
+                <li><img src="images/index/53829f6eNa98427dc.jpg" width="98" height="35"></li>
+                <li><img src="images/index/rBEhUlHmCN0IAAAAAAASpGQ8IDYAABK2AP_yHEAABK8207.jpg" width="98" height="35"></li>
+                <li><img src="images/index/537b316bN35574fff.jpg" width="98" height="35"></li>
+                <li><img src="images/index/54caf3a2N56357d7c.jpg" width="98" height="35"></li>
+                <li><img src="images/index/537b3173Ne74bf3cf.jpg" width="98" height="35"></li>
+                <li><img src="images/index/537b3152Nf0573a0d.jpg" width="98" height="35"></li>
+                <li><img src="images/index/537b3130N7591211b.jpg" width="98" height="35"></li>
+                <li><img src="images/index/rBEbRlN5zCsIAAAAAAALfFfJRv8AACGGgO__3sAAAuU660.jpg" width="98" height="35"></li>
+              </ul>
+              <div class="ad_02"> <a href="javascript:;"><img src="images/index/fl_ad_02.jpg" width="209" height="181"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="floor" id="f6">
+          <div class="f_top">
+            <s>6F<b></b></s><div class="title">母婴玩具</div>
+            <div class="tab">
+              <ul>
+                <li><a href="javascript:;">特价商品</a></li>
+                <li><a href="javascript:;">笔记本</a></li>
+                <Li><a href="javascript:;">数码影音</a></Li>
+                <li><a href="javascript:;">DIY攒机</a></li>
+                <Li><a href="javascript:;">外设办公</a></Li>
+              </ul>
+            </div>
+            <div class="link">
+              <ul>
+                <li><a href="javascript:;">DIY装机大师</a></li>
+                <li><a href="javascript:;">游戏社区</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="box">
+            <div class="cols_1">
+              <ul>
+                <li><a href="javascript:;">手机</a></li>
+                <li><a href="javascript:;">空调</a></li>
+                <li><a href="javascript:;">手机配件</a></li>
+                <li><a href="javascript:;">平板电视</a></li>
+                <li><a href="javascript:;">话费补贴</a></li>
+                <li><a href="javascript:;">冰箱</a></li>
+                <li><a href="javascript:;">生活电器</a></li>
+                <li><a href="javascript:;">洗衣机</a></li>
+                <li><a href="javascript:;">厨房电器</a></li>
+                <li><a href="javascript:;">热水器</a></li>
+                <li><a href="javascript:;">个护健康</a></li>
+                <li><a href="javascript:;">烟机/灶具</a></li>
+                <li><a href="javascript:;">五金家装</a></li>
+                <li><a href="javascript:;">家庭影院</a></li>
+                <li><a href="javascript:;">冰柜/冰吧</a></li>
+                <li><a href="javascript:;">汽车用品</a></li>
+              </ul>
+              <span><img src="images/index/fl_01.jpg" width="200" height="140" /></span>
+            </div>
+            <div class="cols_2">
+              <dl>
+                <dt><img src="images/index/fl_dl_01.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">48英寸智能电视2499,55英寸智能电视3499</a></dd>
+                <s>买电视送澳门风云2电影票</s>
+              </dl>
+              <div class="ad_01"><a href="javascript:;"><img src="images/index/fl_ad_01.jpg" width="473" height="180"></a></div>
+              <dl>
+                <dt><img src="images/index/fl_dl_02.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">moto新品首发</a></dd>
+                <s>归来！2月5日10:30抢</s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_03.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">小家电--加一元即享买一赠一</a></dd>
+                <s>另有疯狂加价购</s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_04.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">大神 X7 现货开抢！</a></dd>
+                <s>￥<span>1699</span>.00</s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_05.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">大家电-年前收货！全场狂降!</a></dd>
+                <s>大牌7kg洗衣机998元秒杀</s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_06.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">这就是范儿！有范儿才有未来！</a></dd>
+                <s></s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_07.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">回家路上，车品护航</a></dd>
+                <s>年底大放血！</s>
+              </dl>
+            </div>
+            <div class="cols_3">
+              <ul>
+                <li><img src="images/index/rBEQWVFQLqgIAAAAAAAFbgvhBqMAAC0MAP_3cIAAAWG414.gif" width="98" height="35"></li>
+                <li><img src="images/index/537b3138N3205302e.jpg" width="98" height="35"></li>
+                <li><img src="images/index/53829f6eNa98427dc.jpg" width="98" height="35"></li>
+                <li><img src="images/index/rBEhUlHmCN0IAAAAAAASpGQ8IDYAABK2AP_yHEAABK8207.jpg" width="98" height="35"></li>
+                <li><img src="images/index/537b316bN35574fff.jpg" width="98" height="35"></li>
+                <li><img src="images/index/54caf3a2N56357d7c.jpg" width="98" height="35"></li>
+                <li><img src="images/index/537b3173Ne74bf3cf.jpg" width="98" height="35"></li>
+                <li><img src="images/index/537b3152Nf0573a0d.jpg" width="98" height="35"></li>
+                <li><img src="images/index/537b3130N7591211b.jpg" width="98" height="35"></li>
+                <li><img src="images/index/rBEbRlN5zCsIAAAAAAALfFfJRv8AACGGgO__3sAAAuU660.jpg" width="98" height="35"></li>
+              </ul>
+              <div class="ad_02"> <a href="javascript:;"><img src="images/index/fl_ad_02.jpg" width="209" height="181"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="floor" id="f7">
+          <div class="f_top">
+            <s>7F<b></b></s><div class="title">食品保健</div>
+            <div class="tab">
+              <ul>
+                <li><a href="javascript:;">特价商品</a></li>
+                <li><a href="javascript:;">笔记本</a></li>
+                <Li><a href="javascript:;">数码影音</a></Li>
+                <li><a href="javascript:;">DIY攒机</a></li>
+                <Li><a href="javascript:;">外设办公</a></Li>
+              </ul>
+            </div>
+            <div class="link">
+              <ul>
+                <li><a href="javascript:;">DIY装机大师</a></li>
+                <li><a href="javascript:;">游戏社区</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="box">
+            <div class="cols_1">
+              <ul>
+                <li><a href="javascript:;">手机</a></li>
+                <li><a href="javascript:;">空调</a></li>
+                <li><a href="javascript:;">手机配件</a></li>
+                <li><a href="javascript:;">平板电视</a></li>
+                <li><a href="javascript:;">话费补贴</a></li>
+                <li><a href="javascript:;">冰箱</a></li>
+                <li><a href="javascript:;">生活电器</a></li>
+                <li><a href="javascript:;">洗衣机</a></li>
+                <li><a href="javascript:;">厨房电器</a></li>
+                <li><a href="javascript:;">热水器</a></li>
+                <li><a href="javascript:;">个护健康</a></li>
+                <li><a href="javascript:;">烟机/灶具</a></li>
+                <li><a href="javascript:;">五金家装</a></li>
+                <li><a href="javascript:;">家庭影院</a></li>
+                <li><a href="javascript:;">冰柜/冰吧</a></li>
+                <li><a href="javascript:;">汽车用品</a></li>
+              </ul>
+              <span><img src="images/index/fl_01.jpg" width="200" height="140" /></span>
+            </div>
+            <div class="cols_2">
+              <dl>
+                <dt><img src="images/index/fl_dl_01.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">48英寸智能电视2499,55英寸智能电视3499</a></dd>
+                <s>买电视送澳门风云2电影票</s>
+              </dl>
+              <div class="ad_01"><a href="javascript:;"><img src="images/index/fl_ad_01.jpg" width="473" height="180"></a></div>
+              <dl>
+                <dt><img src="images/index/fl_dl_02.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">moto新品首发</a></dd>
+                <s>归来！2月5日10:30抢</s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_03.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">小家电--加一元即享买一赠一</a></dd>
+                <s>另有疯狂加价购</s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_04.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">大神 X7 现货开抢！</a></dd>
+                <s>￥<span>1699</span>.00</s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_05.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">大家电-年前收货！全场狂降!</a></dd>
+                <s>大牌7kg洗衣机998元秒杀</s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_06.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">这就是范儿！有范儿才有未来！</a></dd>
+                <s></s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_07.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">回家路上，车品护航</a></dd>
+                <s>年底大放血！</s>
+              </dl>
+            </div>
+            <div class="cols_3">
+              <ul>
+                <li><img src="images/index/rBEQWVFQLqgIAAAAAAAFbgvhBqMAAC0MAP_3cIAAAWG414.gif" width="98" height="35"></li>
+                <li><img src="images/index/537b3138N3205302e.jpg" width="98" height="35"></li>
+                <li><img src="images/index/53829f6eNa98427dc.jpg" width="98" height="35"></li>
+                <li><img src="images/index/rBEhUlHmCN0IAAAAAAASpGQ8IDYAABK2AP_yHEAABK8207.jpg" width="98" height="35"></li>
+                <li><img src="images/index/537b316bN35574fff.jpg" width="98" height="35"></li>
+                <li><img src="images/index/54caf3a2N56357d7c.jpg" width="98" height="35"></li>
+                <li><img src="images/index/537b3173Ne74bf3cf.jpg" width="98" height="35"></li>
+                <li><img src="images/index/537b3152Nf0573a0d.jpg" width="98" height="35"></li>
+                <li><img src="images/index/537b3130N7591211b.jpg" width="98" height="35"></li>
+                <li><img src="images/index/rBEbRlN5zCsIAAAAAAALfFfJRv8AACGGgO__3sAAAuU660.jpg" width="98" height="35"></li>
+              </ul>
+              <div class="ad_02"> <a href="javascript:;"><img src="images/index/fl_ad_02.jpg" width="209" height="181"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="floor" id="f8">
+          <div class="f_top">
+            <s>8F<b></b></s><div class="title">图书音像</div>
+            <div class="tab">
+              <ul>
+                <li><a href="javascript:;">特价商品</a></li>
+                <li><a href="javascript:;">笔记本</a></li>
+                <Li><a href="javascript:;">数码影音</a></Li>
+                <li><a href="javascript:;">DIY攒机</a></li>
+                <Li><a href="javascript:;">外设办公</a></Li>
+              </ul>
+            </div>
+            <div class="link">
+              <ul>
+                <li><a href="javascript:;">DIY装机大师</a></li>
+                <li><a href="javascript:;">游戏社区</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="box">
+            <div class="cols_1">
+              <ul>
+                <li><a href="javascript:;">手机</a></li>
+                <li><a href="javascript:;">空调</a></li>
+                <li><a href="javascript:;">手机配件</a></li>
+                <li><a href="javascript:;">平板电视</a></li>
+                <li><a href="javascript:;">话费补贴</a></li>
+                <li><a href="javascript:;">冰箱</a></li>
+                <li><a href="javascript:;">生活电器</a></li>
+                <li><a href="javascript:;">洗衣机</a></li>
+                <li><a href="javascript:;">厨房电器</a></li>
+                <li><a href="javascript:;">热水器</a></li>
+                <li><a href="javascript:;">个护健康</a></li>
+                <li><a href="javascript:;">烟机/灶具</a></li>
+                <li><a href="javascript:;">五金家装</a></li>
+                <li><a href="javascript:;">家庭影院</a></li>
+                <li><a href="javascript:;">冰柜/冰吧</a></li>
+                <li><a href="javascript:;">汽车用品</a></li>
+              </ul>
+              <span><img src="images/index/fl_01.jpg" width="200" height="140" /></span>
+            </div>
+            <div class="cols_2">
+              <dl>
+                <dt><img src="images/index/fl_dl_01.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">48英寸智能电视2499,55英寸智能电视3499</a></dd>
+                <s>买电视送澳门风云2电影票</s>
+              </dl>
+              <div class="ad_01"><a href="javascript:;"><img src="images/index/fl_ad_01.jpg" width="473" height="180"></a></div>
+              <dl>
+                <dt><img src="images/index/fl_dl_02.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">moto新品首发</a></dd>
+                <s>归来！2月5日10:30抢</s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_03.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">小家电--加一元即享买一赠一</a></dd>
+                <s>另有疯狂加价购</s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_04.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">大神 X7 现货开抢！</a></dd>
+                <s>￥<span>1699</span>.00</s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_05.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">大家电-年前收货！全场狂降!</a></dd>
+                <s>大牌7kg洗衣机998元秒杀</s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_06.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">这就是范儿！有范儿才有未来！</a></dd>
+                <s></s>
+              </dl>
+              <dl class="bd_01">
+                <dt><img src="images/index/fl_dl_07.jpg" width="100" height="100"></dt>
+                <dd><a href="javascript:;">回家路上，车品护航</a></dd>
+                <s>年底大放血！</s>
+              </dl>
+            </div>
+            <div class="cols_3">
+              <ul>
+                <li><img src="images/index/rBEQWVFQLqgIAAAAAAAFbgvhBqMAAC0MAP_3cIAAAWG414.gif" width="98" height="35"></li>
+                <li><img src="images/index/537b3138N3205302e.jpg" width="98" height="35"></li>
+                <li><img src="images/index/53829f6eNa98427dc.jpg" width="98" height="35"></li>
+                <li><img src="images/index/rBEhUlHmCN0IAAAAAAASpGQ8IDYAABK2AP_yHEAABK8207.jpg" width="98" height="35"></li>
+                <li><img src="images/index/537b316bN35574fff.jpg" width="98" height="35"></li>
+                <li><img src="images/index/54caf3a2N56357d7c.jpg" width="98" height="35"></li>
+                <li><img src="images/index/537b3173Ne74bf3cf.jpg" width="98" height="35"></li>
+                <li><img src="images/index/537b3152Nf0573a0d.jpg" width="98" height="35"></li>
+                <li><img src="images/index/537b3130N7591211b.jpg" width="98" height="35"></li>
+                <li><img src="images/index/rBEbRlN5zCsIAAAAAAALfFfJRv8AACGGgO__3sAAAuU660.jpg" width="98" height="35"></li>
+              </ul>
+              <div class="ad_02"> <a href="javascript:;"><img src="images/index/fl_ad_02.jpg" width="209" height="181"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <div id="content_4">
+        <div id="share" class="box">
+          <div class="title">热门晒单</div>
+          <ul>
+            <li>
+              <i></i>
+              <div class="img"><a href="javascript:;"><img src="images/index/share_01.jpg" width="50" height="50"></a></div>
+              <div class="tt"><a href="javascript:;">咔哟YOYO4.0蓝牙音箱低音炮立体声无线蓝牙音响</a></div>
+              <div class="detail"><a href="javascript:;">音质还可以，不错的，很小，很大声，很好看。</a></div>
+            </li>
+            <li>
+              <i></i>
+              <div class="img"><a href="javascript:;"><img src="images/index/share_02.jpg" width="50" height="50"></a></div>
+              <div class="tt"><a href="javascript:;">[晒单帖]出乎意料的京东，神奇的泰福高焖烧壶</a></div>
+              <div class="detail"><a href="javascript:;">昨天晚上在京东10点下单的，今天中午就送到了，京东的快递哥实在神速呀！而且态度非常好，还确认了</a></div>
+            </li>
+          </ul>
+        </div>
+        <div class="club">
+          <div id="club" class="box">
+          <div class="title">热门晒单</div>
+          <ul>
+            <li>
+              <b></b>
+              <div class="img"><a href="javascript:;"><img src="images/index/club_01.jpg" width="50" height="50"></a></div>
+              <div class="tt"><a href="javascript:;">咔哟YOYO4.0蓝牙音箱低音炮立体声无线蓝牙音响</a></div>
+              <div class="detail"><a href="javascript:;">音质还可以，不错的，很小，很大声，很好看。</a></div>
+            </li>
+            <li>
+              <b></b>
+              <div class="img"><a href="javascript:;"><img src="images/index/club_02.jpg" width="50" height="50"></a></div>
+              <div class="tt"><a href="javascript:;">[晒单帖]出乎意料的京东，神奇的泰福高焖烧壶</a></div>
+              <div class="detail"><a href="javascript:;">昨天晚上在京东10点下单的，今天中午就送到了，京东的快递哥实在神速呀！而且态度非常好，还确认了</a></div>
+            </li>
+          </ul>
+        </div>
+        </div>
+        <div id="reading">
+          <div class="box_2">
+            <div class="title">
+              <span>在线读书</span>
+              <b><a href="javascript:;">更多在线读书&gt;</a></b>
+            </div>
+            <ul>
+              <div class="img"><img src="images/index/reading.jpg" width="100" height="100"></div>
+              <li><s></s><a href="javascript:;">《来到地球第一天》新书特惠</a></li>
+              <li><s></s><a href="javascript:;">《袁腾飞讲先秦》(套装全两册)</a></li>
+              <li><s></s><a href="javascript:;">《只为成功找方法》升职宝典</a></li>
+              <li><s></s><a href="javascript:;">《如果世界只有我和你》蔡骏荐</a></li>
+            </ul>
+          </div>
+          <div id="order">
+            <div class="title">订阅促销信息</div>
+            <form>
+              <input type="email" name="email" value="请输入您的Email地址" onFocus="if(this.value=='请输入您的Email地址')this.value='';">
+              <button>订阅</button> 
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+        <div class="clear"></div>
+        <!--购物指南、配送方式等! -->
+    <div id="foot_box">
+            <p class="shopping_guide"></p>
+            <ul>
+                <li><b>购物指南</b></li>
+                <li><a href="#">购物流程</a></li>
+                <li><a href="#">会员介绍</a></li>
+                <li><a href="#">团购/机票</a></li>
+                <li><a href="#">常见问题</a></li>
+                <li><a href="#">大家电</a></li>
+                <li><a href="#">联系客服</a></li>
+            </ul>
+	        <p class="send_type"></p>
+            <ul>
+                <li><b>配送方式</b></li>
+                <li><a href="#">上门自提</a></li>
+                <li><a href="#">211限时达</a></li>
+                <li><a href="#">配送服务查询</a></li>
+                <li><a href="#">配送费收取标准</a></li>
+                <li><a href="#">海外配送</a></li>
+            </ul>
+	        <p class="pay_type"></p>
+            <ul>
+                <li><b>支付方式</b></li>
+                <li><a href="#">货到付款</a></li>
+                <li><a href="#">在线支付</a></li>
+                <li><a href="#">分期付款</a></li>
+                <li><a href="#">邮局汇款</a></li>
+                <li><a href="#">公司转账</a></li>
+            </ul>
+	        <p class="sale_service"></p>
+            <ul>
+                <li><b>售后服务</b></li>
+                <li><a href="#">售后政策</a></li>
+                <li> <a href="#">价格保护</a></li>
+                <li><a href="#">退款说明</a></li>
+                <li><a href="#">返修/退换货</a></li>
+                <li><a href="#">取消订单</a></li>
+            </ul>
+	        <p class="special_service"></p>
+            <ul>
+                <li><b>特色服务</b></li>
+                <li><a href="#">夺宝岛</a></li>
+                <li><a href="#">DIY装机</a></li>
+                <li><a href="#">延保服务</a></li>
+                <li><a href="#">京东E卡</a></li>
+                <li> <a href="#">节能补贴</a></li>
+                <li> <a href="#">京东通信</a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+
+        <!--页面底部! -->
+        <div id="footer">
+		    <div class="links"><a href="#">关于我们</a>|<a href="#">联系我们</a>|<a href="#">人才招聘</a>|<a href="#">商家入驻</a>|<a href="#">广告服务</a>|<a href="#">手机京东</a>|<a href="#">友情链接</a>|<a href="#">销售联盟</a>|<a href="#">京东社区</a>|<a href="#">京东公益</a></div>
+		    <div class="copyright">北京市公安局朝阳分局备案编号110105014669  |  京ICP证070359号  |  互联网药品信息服务资格证编号(京)-非经营性-2011-0034<br />
+			    <a href="#">音像制品经营许可证苏宿批005号 </a> |  出版物经营许可证编号新出发(苏)批字第N-012号  |  互联网出版许可证编号新出网证(京)字150号<br />
+			    <a href="#">网络文化经营许可证京网文[2011]0168-061号 </a> Copyright © 2004-2014 京东JD.com 版权所有 <br />
+                京东旗下网站：
+                <a href="#">English Site</a> <a href="#">拍拍网</a> <a href="#">网银在线</a>
+            </div>
+		    <div class="authentication">
+                <a href=""><img src="images/jy.jpg" width="108" height="40" /></a>
+                <a href=""><img src="images/kx.jpg" width="108" height="40" /></a>
+                <a href=""><img src="images/cy.jpg" width="108" height="40" /></a>
+                <a href=""><img src="images/cx.jpg" width="112" height="40" /></a>
+            </div>
+        </div>
+    </body>
+</html>

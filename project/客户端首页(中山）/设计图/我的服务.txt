@@ -1,0 +1,60 @@
+<!-- 我的服务 -->    
+                            <div class="money_account_serve" >
+                            <table >
+                                    <thead >
+                                    <tr>
+                                        <td>服务名称</td>
+                                        <td>服务描述</td>
+                                        <td>备注</td>
+                                        <td>状态</td>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+<%--                                     	<c:forEach items="${serviceList }" var="service"> --%>
+	                                        <tr>
+	                                            <td><a name="service_${service.orderItemType}"  mark="${service.orderItemType}">${service.orderItemTypeName}</td>
+	                                            <td class="textle">${service.description}</td>
+	                                            <td>${service.remark}</td>
+	                                            <td>
+	                                            	<c:choose>
+	                                            		<c:when test="${service.status==0 }"><a class="btnysm btnorg" name="apply" data-id="${service.orderItemType}">我要申请</a></c:when>
+	                                            		<c:when test="${service.status==1 }">申请中</c:when>
+	                                            		<c:when test="${service.status==2 }"><a class="btnysm btnsm-grey">已开通</a></c:when>
+	                                            		<c:when test="${service.status==-1 }"><a class="btnysm btnorg" name="apply" data-id="${service.orderItemType}">重新申请</a></c:when>
+	                                            	</c:choose>
+	                                            </td>	                                            
+	                                        </tr> 
+	                                        
+	                                        <!-- 详情页未上传 -->
+	                                        
+	                                        <tr mark='service'>
+				        						<td mark='"+fileResult[i].attachmentId+"'>"+fileResult[i].attachmentType+"</td>
+				        						<td>(未上传)</td>
+				        						<td>(未上传)</td>
+				        						<td>
+				        							<input id='"+fileResult[i].attachmentId+i+"' type='button' class='btnysm btnorg' style='width:50px;' name='upload' value='"+text+"'>
+				        						</td>
+				        					</tr>
+	                                        <!-- 详情页上传后 -->
+	                                       <tr mark='service'>
+				        						<td mark='"+fileResult[i].attachmentId+"'>"+fileResult[i].attachmentType+"</td>
+				        						<td>
+				        							<a href='/core/downloadFile/down?fileName="+fileRecord.location+"' target='_blank'>"+fileRecord.namedOriginal+"</a>
+				        						</td>
+				        						<td>[<span>"+fileRecord.creatorName+"</span>]于<span>"+fileRecord.createDate+"</span>上传</td>
+				        						<td>
+				        							<input id='"+fileResult[i].attachmentId+i+"' type='button' class='btnysm btnorg' style='width:50px;' name='upload' value='"+text+"'>
+				        						</td>
+				        					</tr>
+	                                        
+	                                        
+	                                        
+	                                        
+<%--                                     	</c:forEach> --%>
+                                       	<c:if test="${empty serviceList }">
+												<tr><td colspan="4" style="font-weight: bold;">暂无服务信息</td></tr> 	                                       	
+                                       	</c:if>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                        </div><!--我的服务-->

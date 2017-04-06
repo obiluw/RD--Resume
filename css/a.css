@@ -1,0 +1,223 @@
+
+p{font-size:1.3em}
+span{font-size:1.1em}
+/*-- max-width: 1024px --*/
+@media only screen and (max-width:1024px) {
+    .header-section h1 {
+        font-size: 3em;
+    }
+    .header-section p {
+        font-size: 1.2em;
+    }
+    .study-grid h3 {
+        font-size: 2em;
+    }
+    .study-grid p {
+        font-size: 1.1em;
+    }
+    .study-grid h4 {
+        font-size: 1.3em;
+    }
+    .service-grid h4 {
+        font-size: 1.3em;
+    }
+    .service-grid p {
+        font-size: 0.965em;
+    }
+    .contact h3 {
+        font-size: 2em;
+    }
+}
+
+/*-- max-width: 768px --*/
+@media only screen and (max-width: 768px){
+    .header-section {
+        min-height: 472px;
+    }
+    .header-section h1 {
+        font-size: 2.5em;
+    }
+    .header-section p {
+        font-size: 1.1em;
+    }
+    span.glyphicon.glyphicon-triangle-bottom {
+        font-size: 1.5em;
+    }
+    .study-section {
+        padding: 3em 0;
+    }
+    .study-grid h3 {
+        font-size: 1.6em;
+    }
+    .study-grid p {
+        font-size: 1em;
+        padding: 1.2em 0 0 0;
+    }
+    .study-grid h4 {
+        font-size: 1.1em;
+    }
+    .service-section {
+        text-align: center;
+        padding: 3em 0;
+    }
+    .service-grid {
+        float: none;
+        width:100%;
+    }
+    .service-grid h4 {
+        font-size: 1.1em;
+    }
+    .service-grid p {
+        font-size: 0.95em;
+    }
+    .contact {
+        padding: 3em 0;
+    }
+    .contact h3 {
+        font-size: 1.6em;
+        margin-bottom: 1.5em;
+    }
+    .contact-left {
+        float: left;
+        width: 50%;
+    }
+    .contact-right {
+        float: left;
+        width: 50%;
+    }
+}
+
+/*-- max-width: 640px --*/
+@media only screen and (max-width: 640px){
+    .header-section img {
+        margin-top: 5em;
+    }
+    .header-section {
+        min-height: 430px;
+    }
+    .header-section h1 {
+        font-size: 2em;
+    }
+    .header-section p {
+        font-size: 1.05em;
+    }
+    .study-grid h3 {
+        font-size: 1.5em;
+    }
+    .study-grid {
+        float: none;
+        width: 100%;
+        margin-top: 2em;
+    }
+    .study2 {
+        padding: 1em 0 0;
+    }
+    .study-grid p {
+        font-size: 0.965em;
+        padding: 1.2em 0 0 0;
+    }
+    .study-section {
+        padding: 1em 0;
+    }
+    .study-grid h4 {
+        font-size: 1em;
+    }
+    .service-grid h4 {
+        font-size: 1em;
+    }
+    .contact-section h3 {
+        font-size: 1.5em;
+    }
+}
+
+/*-- max-width: 480px --*/
+@media only screen and (max-width: 480px) {
+    .header-section img {
+        margin-top: 5em;
+        width: 30%;
+    }
+    .header-section {
+        min-height: 345px;
+    }
+    .header-section h1 {
+        font-size: 1.5em;
+    }
+    span.glyphicon.glyphicon-triangle-bottom {
+        font-size: 1.3em;
+    }
+    .header-section p {
+        font-size: 1em;
+    }
+    .study-grid h3 {
+        font-size: 1.3em;
+    }
+    .study-grid {
+        margin-top: 1em;
+        padding: 0;
+    }
+    .study-grid p {
+        font-size: 0.92em;
+    }
+    .study-grid h4 {
+        font-size: 0.95em;
+    }
+    .service-section {
+        padding: 0em 0;
+    }
+    .service-grid {
+        float: none;
+        width: 100%;
+    }
+    .service-grid h4 {
+        font-size: 0.95em;
+    }
+    .contact {
+        padding: 2em 0;
+    }
+    .contact h3 {
+        font-size: 1.3em;
+        margin-bottom: 1em;
+    }
+}
+
+/*-- max-width: 320px --*/
+@media only screen and (max-width: 320px){
+    .header-section img {
+        margin-top: 4em;
+        width: 40%;
+    }
+    .header-section h1 {
+        font-size: 1.8em;
+    }
+    span.glyphicon.glyphicon-triangle-bottom {
+        font-size: 1em;
+    }
+    .header-section {
+        min-height: 300px;
+    }
+    .study-grid h3 {
+        font-size: 1.5em;
+    }
+    .study-section {
+        padding: 0em 0;
+    }
+    .study-grid p {
+        font-size: 0.9em;
+    }
+    .study-grid {
+        margin-top: 1.5em;
+    }
+    .study-grid h4 {
+        font-size: 1.15em;
+    }
+    .service-grid h4 {
+        font-size: 1.15em;
+    }
+    .contact-section h3 {
+        font-size: 1.5em;
+    }
+    .contact {
+        padding: 1em 0;
+    }
+}
+

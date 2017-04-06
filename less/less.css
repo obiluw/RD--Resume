@@ -1,0 +1,335 @@
+/*-- max-width: 1024px --*/
+@media only screen and (max-width: 1025px) {
+  /*--header--*/
+  .header-section h1 {
+    font-size: 3em;
+  }
+  .header-section p {
+    font-size: 1.2em;
+  }
+  .header-section .glyphicon-triangle-bottom {
+    font-size: 1.5em;
+  }
+  /*--section--*/
+  /*--about me--*/
+  #contact .about h3 {
+    font-size: 2.5em;
+  }
+  #contact .about p {
+    font-size: 1.4em;
+  }
+  #contact .about span {
+    font-size: 1.1em;
+  }
+  /*--study-section--*/
+  .study-grid h3 {
+    font-size: 2.4em;
+  }
+  .study-grid h4 {
+    font-size: 1.3em;
+  }
+  .study-grid p {
+    font-size: 0.9em;
+  }
+  .study-grid span {
+    font-size: 0.9em;
+  }
+  .study-grid label {
+    font-size: 0.8em;
+  }
+  /*--service-section--*/
+  .service-section h4 {
+    font-size: 1.3em;
+  }
+  .service-section p {
+    font-size: 1.1em;
+  }
+  /*--  ��Ŀ PORTFOLIO  --*/
+  .gallery-section h3 {
+    font-size: 2.5em;
+  }
+  .gallery-section p {
+    font-size: 1.4em;
+  }
+  .gallery-section .button {
+    width: 50%;
+  }
+  .gallery-section .gallery-grid {
+    float: left;
+    width: 33.3%;
+  }
+  .gallery-section .gallery-grid h4 {
+    font-size: 1.3em;
+  }
+  .gallery-section .gallery-grid p {
+    font-size: 0.8em;
+  }
+  .gallery-section .gallery-grid a {
+    font-size: 1.5em;
+  }
+  /*-- footer --*/
+  .footer-top {
+    font-size: 1.2em;
+  }
+}
+/*-- max-width: 768px --*/
+@media only screen and (max-width: 768px) {
+  /*--header--*/
+  .header-section h1 {
+    font-size: 2.8em;
+  }
+  .header-section p {
+    font-size: 1.1em;
+  }
+  .header-section .glyphicon-triangle-bottom {
+    font-size: 1.4em;
+  }
+  /*--section--*/
+  /*--about me--*/
+  #contact .about h3 {
+    font-size: 2.3em;
+  }
+  #contact .about p {
+    font-size: 1.3em;
+  }
+  #contact .about span {
+    font-size: 1.0em;
+  }
+  /*--study-section--*/
+  .study-grid h3 {
+    font-size: 2.2em;
+  }
+  .study-grid h4 {
+    font-size: 1.2em;
+  }
+  .study-grid p {
+    font-size: 1.0em;
+  }
+  .study-grid span {
+    font-size: 0.8em;
+  }
+  .study-grid label {
+    font-size: 0.7em;
+  }
+  /*--service-section--*/
+  .service-section h4 {
+    font-size: 1.3em;
+  }
+  .service-section p {
+    font-size: 1.1em;
+  }
+  /*--  ��Ŀ PORTFOLIO  --*/
+  .gallery-section h3 {
+    font-size: 2.3em;
+  }
+  .gallery-section p {
+    font-size: 1.3em;
+  }
+  .gallery-section .gallery-grid {
+    float: left;
+    width: 33.3%;
+  }
+  .gallery-section .gallery-grid h4 {
+    font-size: 1.2em;
+  }
+  .gallery-section .gallery-grid p {
+    font-size: 0.5em;
+  }
+  .gallery-section .gallery-grid a {
+    font-size: 1.4em;
+  }
+  /*-- footer --*/
+  .footer-top {
+    font-size: 1.1em;
+  }
+}
+/*-- max-width: 640px --*/
+@media only screen and (max-width: 640px) {
+  /*--header--*/
+  .header-section h1 {
+    font-size: 2.6em;
+  }
+  .header-section p {
+    font-size: 1.0em;
+  }
+  .header-section .glyphicon-triangle-bottom {
+    font-size: 1.3em;
+  }
+  /*--section--*/
+  /*--about me--*/
+  #contact .about h3 {
+    font-size: 2.1em;
+  }
+  #contact .about p {
+    font-size: 1.2em;
+  }
+  #contact .about span {
+    font-size: 0.9em;
+  }
+  /*--study-section--*/
+  .study-grid h3 {
+    font-size: 2.0em;
+  }
+  .study-grid h4 {
+    font-size: 1.1em;
+  }
+  .study-grid p {
+    font-size: 0.7em;
+  }
+  .study-grid span {
+    font-size: 0.7em;
+  }
+  .study-grid label {
+    font-size: 0.6em;
+  }
+  /*--service-section--*/
+  .service-section h4 {
+    font-size: 1.3em;
+  }
+  .service-section p {
+    font-size: 1.1em;
+  }
+  /*--  ��Ŀ PORTFOLIO  --*/
+  .gallery-section h3 {
+    font-size: 2.1em;
+  }
+  .gallery-section p {
+    font-size: 1.2em;
+  }
+  .gallery-section .gallery-grid {
+    float: left;
+    width: 50%;
+  }
+  .gallery-section .gallery-grid h4 {
+    font-size: 1.2em;
+  }
+  .gallery-section .gallery-grid a {
+    font-size: 1.2em;
+  }
+  .gallery-section .gallery-grid p {
+    font-size: 0.4em;
+  }
+  /*-- footer --*/
+  .footer-top {
+    font-size: 1.0em;
+  }
+}
+/*-- max-width: 480px --*/
+@media only screen and (max-width: 480px) {
+  /*--section--*/
+  /*--about me--*/
+  #contact .about h3 {
+    font-size: 2.0em;
+  }
+  #contact .about p {
+    font-size: 1.1em;
+  }
+  #contact .about span {
+    font-size: 0.8em;
+  }
+  /*--study-section--*/
+  .study-grid h3 {
+    font-size: 1.8em;
+  }
+  .study-grid h4 {
+    font-size: 1.0em;
+  }
+  .study-grid p {
+    font-size: 0.7em;
+  }
+  .study-grid span {
+    font-size: 0.7em;
+  }
+  .study-grid label {
+    font-size: 0.6em;
+  }
+  /*--service-section--*/
+  .service-section h4 {
+    font-size: 1.3em;
+  }
+  .service-section p {
+    font-size: 1.1em;
+  }
+  /*--  ��Ŀ PORTFOLIO  --*/
+  .gallery-section h3 {
+    font-size: 1.9em;
+  }
+  .gallery-section p {
+    font-size: 1.0em;
+  }
+  .gallery-section .button {
+    width: 70%;
+  }
+  .gallery-section .gallery-grid {
+    float: left;
+    width: 50%;
+  }
+  .gallery-section .gallery-grid h4 {
+    font-size: 1.1em;
+  }
+  .gallery-section .gallery-grid a {
+    font-size: 1.1em;
+  }
+  /*-- footer --*/
+  .footer-top {
+    font-size: 0.9em;
+  }
+}
+/*-- max-width: 320px --*/
+@media only screen and (max-width: 320px) {
+  /*--section--*/
+  /*--about me--*/
+  #contact .about h3 {
+    font-size: 1.8em;
+  }
+  #contact .about p {
+    font-size: 1.0em;
+  }
+  #contact .about span {
+    font-size: 0.7em;
+  }
+  /*--study-section--*/
+  .study-grid h3 {
+    font-size: 1.6em;
+  }
+  .study-grid h4 {
+    font-size: 0.9em;
+  }
+  .study-grid p {
+    font-size: 0.6em;
+  }
+  .study-grid span {
+    font-size: 0.6em;
+  }
+  .study-grid label {
+    font-size: 0.5em;
+  }
+  /*--service-section--*/
+  .service-section h4 {
+    font-size: 1.3em;
+  }
+  .service-section p {
+    font-size: 1.1em;
+  }
+  /*--  ��Ŀ PORTFOLIO  --*/
+  .gallery-section h3 {
+    font-size: 1.7em;
+  }
+  .gallery-section p {
+    font-size: 0.9em;
+  }
+  .gallery-section .gallery-grid {
+    float: left;
+    width: 100%;
+  }
+  .gallery-section .gallery-grid h4 {
+    font-size: 1.2em;
+  }
+  .gallery-section .gallery-grid a {
+    font-size: 1.2em;
+  }
+  /*-- footer --*/
+  .footer-top {
+    font-size: 0.8em;
+  }
+}

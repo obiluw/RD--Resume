@@ -1,0 +1,61 @@
+/**Bootstrap提供的样式**/
+@import "bootstrap.less";
+
+/**自定义样式**/
+body {
+  margin-top: @navbar-height;
+}
+
+/**导航栏相关样式**/
+.login-menu {
+  width: 320px;
+}
+
+
+/**主体部分的相关样式**/
+.main {
+  background: @dark-blue;
+  color: #fff;
+  a {
+    color: #fff;
+    &:hover {
+      color: @body-bg;
+    }
+  }
+}
+
+.main > .container > .row {
+  margin-bottom: 15px;
+}
+/*md/lg*/
+@media screen and (min-width: @screen-md-min) {
+  .main .media .media-body ul {
+    padding: 18px 0;
+    line-height: 1.9em;
+  }
+}
+/*sm*/
+@media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+  .main .media .media-body ul {
+    padding: 19px 0;
+    line-height: 2em;
+  }
+}
+/*xs*/
+@media screen and (max-width: @screen-xs-max) {
+  .main .media .media-body ul {
+    padding: 19px 0;
+    line-height: 2em;
+  }
+}
+/*sm/md/xs*/
+@media screen and (min-width: @screen-sm-min) {
+  .top-text {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    color: #fff;
+  }
+}
+
+
